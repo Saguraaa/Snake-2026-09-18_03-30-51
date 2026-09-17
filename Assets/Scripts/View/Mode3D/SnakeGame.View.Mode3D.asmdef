@@ -1,0 +1,22 @@
+{
+  "name": "SnakeGame.View.Mode3D",
+  "rootNamespace": "SnakeGame.View.Mode3D",
+  "references": [
+    "SnakeGame.Core",
+    "SnakeGame.Features",
+    "SnakeGame.View.Common",
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Mathematics",
+    "Unity.Transforms"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

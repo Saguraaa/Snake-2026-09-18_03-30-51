@@ -1,0 +1,14 @@
+{
+  "sequences": 20,
+  "grassTiles": 16,
+  "controls": "passed",
+  "imageLoads": "passed",
+  "viewports": [
+    1360,
+    390,
+    320,
+    768
+  ],
+  "horizontalOverflow": false,
+  "consoleErrors": []
+}

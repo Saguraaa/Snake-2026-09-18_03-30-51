@@ -1,0 +1,22 @@
+{
+  "name": "SnakeGame.Skills.Authoring",
+  "rootNamespace": "SnakeGame.Skills.Authoring",
+  "references": [
+    "SnakeGame.Core",
+    "SnakeGame.Features",
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Entities.Hybrid",
+    "Unity.Mathematics",
+    "Unity.Transforms"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

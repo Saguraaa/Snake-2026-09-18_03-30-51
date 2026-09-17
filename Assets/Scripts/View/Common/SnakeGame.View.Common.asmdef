@@ -1,0 +1,20 @@
+{
+  "name": "SnakeGame.View.Common",
+  "rootNamespace": "SnakeGame.View.Common",
+  "references": [
+    "SnakeGame.Core",
+    "SnakeGame.Features",
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Mathematics"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

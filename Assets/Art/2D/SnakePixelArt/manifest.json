@@ -1,0 +1,1764 @@
+{
+  "version": 1,
+  "pixelsPerUnit": 16,
+  "terrainTilePixels": 16,
+  "snakeCellPixels": 32,
+  "coordinates": "SVG/PNG: top-left origin, x right, y down. Directions refer to travel.",
+  "grassAtlasOrder": [
+    "grass_top_left",
+    "grass_top",
+    "grass_top_right",
+    "grass_left",
+    "grass_center",
+    "grass_right",
+    "grass_bottom_left",
+    "grass_bottom",
+    "grass_bottom_right",
+    "grass_inner_tl",
+    "grass_inner_tr",
+    "grass_inner_bl",
+    "grass_inner_br",
+    "grass_center_2",
+    "grass_center_3",
+    "grass_center_4"
+  ],
+  "palette": {
+    "ink": "#211f30",
+    "grass": "#72a11d",
+    "grassLight": "#a4cc42",
+    "grassDark": "#28860f",
+    "grassDeep": "#076029",
+    "grassGlint": "#e1f394",
+    "cyan": "#6cd9f1",
+    "cyanLight": "#acf7fa",
+    "cyanDark": "#2facda",
+    "cyanDeep": "#177aa8",
+    "white": "#ffffff",
+    "pink": "#e44a6e",
+    "pinkDark": "#9c1b4d",
+    "red": "#e44a4a",
+    "redDark": "#cc3048",
+    "yellow": "#f8d76d"
+  },
+  "assets": [
+    {
+      "id": "grass_top_left",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "tl",
+      "svg": "SVG/Grass/grass_top_left.svg",
+      "png": "PNG/Grass/grass_top_left.png"
+    },
+    {
+      "id": "grass_top",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "t",
+      "svg": "SVG/Grass/grass_top.svg",
+      "png": "PNG/Grass/grass_top.png"
+    },
+    {
+      "id": "grass_top_right",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "tr",
+      "svg": "SVG/Grass/grass_top_right.svg",
+      "png": "PNG/Grass/grass_top_right.png"
+    },
+    {
+      "id": "grass_left",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "l",
+      "svg": "SVG/Grass/grass_left.svg",
+      "png": "PNG/Grass/grass_left.png"
+    },
+    {
+      "id": "grass_center",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "",
+      "svg": "SVG/Grass/grass_center.svg",
+      "png": "PNG/Grass/grass_center.png"
+    },
+    {
+      "id": "grass_right",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "r",
+      "svg": "SVG/Grass/grass_right.svg",
+      "png": "PNG/Grass/grass_right.png"
+    },
+    {
+      "id": "grass_bottom_left",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "bl",
+      "svg": "SVG/Grass/grass_bottom_left.svg",
+      "png": "PNG/Grass/grass_bottom_left.png"
+    },
+    {
+      "id": "grass_bottom",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "b",
+      "svg": "SVG/Grass/grass_bottom.svg",
+      "png": "PNG/Grass/grass_bottom.png"
+    },
+    {
+      "id": "grass_bottom_right",
+      "width": 16,
+      "height": 16,
+      "exposedEdges": "br",
+      "svg": "SVG/Grass/grass_bottom_right.svg",
+      "png": "PNG/Grass/grass_bottom_right.png"
+    },
+    {
+      "id": "grass_inner_tl",
+      "width": 16,
+      "height": 16,
+      "innerCorner": "tl",
+      "svg": "SVG/Grass/grass_inner_tl.svg",
+      "png": "PNG/Grass/grass_inner_tl.png"
+    },
+    {
+      "id": "grass_inner_tr",
+      "width": 16,
+      "height": 16,
+      "innerCorner": "tr",
+      "svg": "SVG/Grass/grass_inner_tr.svg",
+      "png": "PNG/Grass/grass_inner_tr.png"
+    },
+    {
+      "id": "grass_inner_bl",
+      "width": 16,
+      "height": 16,
+      "innerCorner": "bl",
+      "svg": "SVG/Grass/grass_inner_bl.svg",
+      "png": "PNG/Grass/grass_inner_bl.png"
+    },
+    {
+      "id": "grass_inner_br",
+      "width": 16,
+      "height": 16,
+      "innerCorner": "br",
+      "svg": "SVG/Grass/grass_inner_br.svg",
+      "png": "PNG/Grass/grass_inner_br.png"
+    },
+    {
+      "id": "grass_center_2",
+      "width": 16,
+      "height": 16,
+      "variant": 2,
+      "svg": "SVG/Grass/grass_center_2.svg",
+      "png": "PNG/Grass/grass_center_2.png"
+    },
+    {
+      "id": "grass_center_3",
+      "width": 16,
+      "height": 16,
+      "variant": 3,
+      "svg": "SVG/Grass/grass_center_3.svg",
+      "png": "PNG/Grass/grass_center_3.png"
+    },
+    {
+      "id": "grass_center_4",
+      "width": 16,
+      "height": 16,
+      "variant": 4,
+      "svg": "SVG/Grass/grass_center_4.svg",
+      "png": "PNG/Grass/grass_center_4.png"
+    },
+    {
+      "id": "body_horizontal",
+      "width": 32,
+      "height": 32,
+      "svg": "SVG/Snake/Body/body_horizontal.svg",
+      "png": "PNG/Snake/Body/body_horizontal.png"
+    },
+    {
+      "id": "body_vertical",
+      "width": 32,
+      "height": 32,
+      "svg": "SVG/Snake/Body/body_vertical.svg",
+      "png": "PNG/Snake/Body/body_vertical.png"
+    },
+    {
+      "id": "body_corner_left_up",
+      "width": 32,
+      "height": 32,
+      "connections": [
+        "left",
+        "up"
+      ],
+      "svg": "SVG/Snake/Body/body_corner_left_up.svg",
+      "png": "PNG/Snake/Body/body_corner_left_up.png"
+    },
+    {
+      "id": "body_corner_up_right",
+      "width": 32,
+      "height": 32,
+      "connections": [
+        "up",
+        "right"
+      ],
+      "svg": "SVG/Snake/Body/body_corner_up_right.svg",
+      "png": "PNG/Snake/Body/body_corner_up_right.png"
+    },
+    {
+      "id": "body_corner_right_down",
+      "width": 32,
+      "height": 32,
+      "connections": [
+        "right",
+        "down"
+      ],
+      "svg": "SVG/Snake/Body/body_corner_right_down.svg",
+      "png": "PNG/Snake/Body/body_corner_right_down.png"
+    },
+    {
+      "id": "body_corner_down_left",
+      "width": 32,
+      "height": 32,
+      "connections": [
+        "down",
+        "left"
+      ],
+      "svg": "SVG/Snake/Body/body_corner_down_left.svg",
+      "png": "PNG/Snake/Body/body_corner_down_left.png"
+    },
+    {
+      "id": "head_up",
+      "width": 32,
+      "height": 32,
+      "direction": "up",
+      "svg": "SVG/Snake/Head/head_up.svg",
+      "png": "PNG/Snake/Head/head_up.png"
+    },
+    {
+      "id": "tail_up",
+      "width": 32,
+      "height": 32,
+      "direction": "up",
+      "meaning": "direction of travel; connector at front, tip at rear",
+      "svg": "SVG/Snake/Tail/tail_up.svg",
+      "png": "PNG/Snake/Tail/tail_up.png"
+    },
+    {
+      "id": "head_right",
+      "width": 32,
+      "height": 32,
+      "direction": "right",
+      "svg": "SVG/Snake/Head/head_right.svg",
+      "png": "PNG/Snake/Head/head_right.png"
+    },
+    {
+      "id": "tail_right",
+      "width": 32,
+      "height": 32,
+      "direction": "right",
+      "meaning": "direction of travel; connector at front, tip at rear",
+      "svg": "SVG/Snake/Tail/tail_right.svg",
+      "png": "PNG/Snake/Tail/tail_right.png"
+    },
+    {
+      "id": "head_down",
+      "width": 32,
+      "height": 32,
+      "direction": "down",
+      "svg": "SVG/Snake/Head/head_down.svg",
+      "png": "PNG/Snake/Head/head_down.png"
+    },
+    {
+      "id": "tail_down",
+      "width": 32,
+      "height": 32,
+      "direction": "down",
+      "meaning": "direction of travel; connector at front, tip at rear",
+      "svg": "SVG/Snake/Tail/tail_down.svg",
+      "png": "PNG/Snake/Tail/tail_down.png"
+    },
+    {
+      "id": "head_left",
+      "width": 32,
+      "height": 32,
+      "direction": "left",
+      "svg": "SVG/Snake/Head/head_left.svg",
+      "png": "PNG/Snake/Head/head_left.png"
+    },
+    {
+      "id": "tail_left",
+      "width": 32,
+      "height": 32,
+      "direction": "left",
+      "meaning": "direction of travel; connector at front, tip at rear",
+      "svg": "SVG/Snake/Tail/tail_left.svg",
+      "png": "PNG/Snake/Tail/tail_left.png"
+    },
+    {
+      "id": "head_idle_up_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_up",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_idle_up/head_idle_up_0.svg",
+      "png": "PNG/Animations/Frames/head_idle_up/head_idle_up_0.png"
+    },
+    {
+      "id": "head_idle_up_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_up",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_idle_up/head_idle_up_1.svg",
+      "png": "PNG/Animations/Frames/head_idle_up/head_idle_up_1.png"
+    },
+    {
+      "id": "head_idle_up_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_up",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_idle_up/head_idle_up_2.svg",
+      "png": "PNG/Animations/Frames/head_idle_up/head_idle_up_2.png"
+    },
+    {
+      "id": "head_idle_up_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_up",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_idle_up/head_idle_up_3.svg",
+      "png": "PNG/Animations/Frames/head_idle_up/head_idle_up_3.png"
+    },
+    {
+      "id": "head_idle_up",
+      "width": 128,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "fps": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        600,
+        120,
+        100,
+        380
+      ],
+      "svg": "SVG/Animations/Sheets/head_idle_up.svg",
+      "png": "PNG/Animations/Sheets/head_idle_up.png"
+    },
+    {
+      "id": "head_turn_up_to_left_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_0.png"
+    },
+    {
+      "id": "head_turn_up_to_left_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_1.png"
+    },
+    {
+      "id": "head_turn_up_to_left_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_2.png"
+    },
+    {
+      "id": "head_turn_up_to_left_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_3.png"
+    },
+    {
+      "id": "head_turn_up_to_left_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_4.png"
+    },
+    {
+      "id": "head_turn_up_to_left_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_left",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_left/head_turn_up_to_left_5.png"
+    },
+    {
+      "id": "head_turn_up_to_left",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "up",
+      "to": "left",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_up_to_left.svg",
+      "png": "PNG/Animations/Sheets/head_turn_up_to_left.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_0.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_1.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_2.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_3.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_4.png"
+    },
+    {
+      "id": "tail_turn_up_to_left_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_left",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_left/tail_turn_up_to_left_5.png"
+    },
+    {
+      "id": "tail_turn_up_to_left",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "up",
+      "to": "left",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_up_to_left.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_up_to_left.png"
+    },
+    {
+      "id": "head_turn_up_to_right_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_0.png"
+    },
+    {
+      "id": "head_turn_up_to_right_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_1.png"
+    },
+    {
+      "id": "head_turn_up_to_right_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_2.png"
+    },
+    {
+      "id": "head_turn_up_to_right_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_3.png"
+    },
+    {
+      "id": "head_turn_up_to_right_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_4.png"
+    },
+    {
+      "id": "head_turn_up_to_right_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_up_to_right",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_up_to_right/head_turn_up_to_right_5.png"
+    },
+    {
+      "id": "head_turn_up_to_right",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "up",
+      "to": "right",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_up_to_right.svg",
+      "png": "PNG/Animations/Sheets/head_turn_up_to_right.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_0.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_1.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_2.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_3.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_4.png"
+    },
+    {
+      "id": "tail_turn_up_to_right_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_up_to_right",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_up_to_right/tail_turn_up_to_right_5.png"
+    },
+    {
+      "id": "tail_turn_up_to_right",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "up",
+      "to": "right",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_up_to_right.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_up_to_right.png"
+    },
+    {
+      "id": "head_idle_right_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_right",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_idle_right/head_idle_right_0.svg",
+      "png": "PNG/Animations/Frames/head_idle_right/head_idle_right_0.png"
+    },
+    {
+      "id": "head_idle_right_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_right",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_idle_right/head_idle_right_1.svg",
+      "png": "PNG/Animations/Frames/head_idle_right/head_idle_right_1.png"
+    },
+    {
+      "id": "head_idle_right_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_right",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_idle_right/head_idle_right_2.svg",
+      "png": "PNG/Animations/Frames/head_idle_right/head_idle_right_2.png"
+    },
+    {
+      "id": "head_idle_right_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_right",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_idle_right/head_idle_right_3.svg",
+      "png": "PNG/Animations/Frames/head_idle_right/head_idle_right_3.png"
+    },
+    {
+      "id": "head_idle_right",
+      "width": 128,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "fps": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        600,
+        120,
+        100,
+        380
+      ],
+      "svg": "SVG/Animations/Sheets/head_idle_right.svg",
+      "png": "PNG/Animations/Sheets/head_idle_right.png"
+    },
+    {
+      "id": "head_turn_right_to_up_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_0.png"
+    },
+    {
+      "id": "head_turn_right_to_up_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_1.png"
+    },
+    {
+      "id": "head_turn_right_to_up_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_2.png"
+    },
+    {
+      "id": "head_turn_right_to_up_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_3.png"
+    },
+    {
+      "id": "head_turn_right_to_up_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_4.png"
+    },
+    {
+      "id": "head_turn_right_to_up_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_up",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_up/head_turn_right_to_up_5.png"
+    },
+    {
+      "id": "head_turn_right_to_up",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "right",
+      "to": "up",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_right_to_up.svg",
+      "png": "PNG/Animations/Sheets/head_turn_right_to_up.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_0.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_1.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_2.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_3.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_4.png"
+    },
+    {
+      "id": "tail_turn_right_to_up_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_up",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_up/tail_turn_right_to_up_5.png"
+    },
+    {
+      "id": "tail_turn_right_to_up",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "right",
+      "to": "up",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_right_to_up.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_right_to_up.png"
+    },
+    {
+      "id": "head_turn_right_to_down_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_0.png"
+    },
+    {
+      "id": "head_turn_right_to_down_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_1.png"
+    },
+    {
+      "id": "head_turn_right_to_down_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_2.png"
+    },
+    {
+      "id": "head_turn_right_to_down_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_3.png"
+    },
+    {
+      "id": "head_turn_right_to_down_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_4.png"
+    },
+    {
+      "id": "head_turn_right_to_down_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_right_to_down",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_right_to_down/head_turn_right_to_down_5.png"
+    },
+    {
+      "id": "head_turn_right_to_down",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "right",
+      "to": "down",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_right_to_down.svg",
+      "png": "PNG/Animations/Sheets/head_turn_right_to_down.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_0.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_1.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_2.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_3.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_4.png"
+    },
+    {
+      "id": "tail_turn_right_to_down_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_right_to_down",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_right_to_down/tail_turn_right_to_down_5.png"
+    },
+    {
+      "id": "tail_turn_right_to_down",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "right",
+      "to": "down",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_right_to_down.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_right_to_down.png"
+    },
+    {
+      "id": "head_idle_down_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_down",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_idle_down/head_idle_down_0.svg",
+      "png": "PNG/Animations/Frames/head_idle_down/head_idle_down_0.png"
+    },
+    {
+      "id": "head_idle_down_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_down",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_idle_down/head_idle_down_1.svg",
+      "png": "PNG/Animations/Frames/head_idle_down/head_idle_down_1.png"
+    },
+    {
+      "id": "head_idle_down_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_down",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_idle_down/head_idle_down_2.svg",
+      "png": "PNG/Animations/Frames/head_idle_down/head_idle_down_2.png"
+    },
+    {
+      "id": "head_idle_down_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_down",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_idle_down/head_idle_down_3.svg",
+      "png": "PNG/Animations/Frames/head_idle_down/head_idle_down_3.png"
+    },
+    {
+      "id": "head_idle_down",
+      "width": 128,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "fps": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        600,
+        120,
+        100,
+        380
+      ],
+      "svg": "SVG/Animations/Sheets/head_idle_down.svg",
+      "png": "PNG/Animations/Sheets/head_idle_down.png"
+    },
+    {
+      "id": "head_turn_down_to_right_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_0.png"
+    },
+    {
+      "id": "head_turn_down_to_right_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_1.png"
+    },
+    {
+      "id": "head_turn_down_to_right_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_2.png"
+    },
+    {
+      "id": "head_turn_down_to_right_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_3.png"
+    },
+    {
+      "id": "head_turn_down_to_right_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_4.png"
+    },
+    {
+      "id": "head_turn_down_to_right_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_right",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_right/head_turn_down_to_right_5.png"
+    },
+    {
+      "id": "head_turn_down_to_right",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "down",
+      "to": "right",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_down_to_right.svg",
+      "png": "PNG/Animations/Sheets/head_turn_down_to_right.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_0.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_1.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_2.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_3.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_4.png"
+    },
+    {
+      "id": "tail_turn_down_to_right_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_right",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_right/tail_turn_down_to_right_5.png"
+    },
+    {
+      "id": "tail_turn_down_to_right",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "down",
+      "to": "right",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_down_to_right.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_down_to_right.png"
+    },
+    {
+      "id": "head_turn_down_to_left_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_0.png"
+    },
+    {
+      "id": "head_turn_down_to_left_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_1.png"
+    },
+    {
+      "id": "head_turn_down_to_left_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_2.png"
+    },
+    {
+      "id": "head_turn_down_to_left_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_3.png"
+    },
+    {
+      "id": "head_turn_down_to_left_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_4.png"
+    },
+    {
+      "id": "head_turn_down_to_left_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_down_to_left",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_down_to_left/head_turn_down_to_left_5.png"
+    },
+    {
+      "id": "head_turn_down_to_left",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "down",
+      "to": "left",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_down_to_left.svg",
+      "png": "PNG/Animations/Sheets/head_turn_down_to_left.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_0.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_1.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_2.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_3.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_4.png"
+    },
+    {
+      "id": "tail_turn_down_to_left_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_down_to_left",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_down_to_left/tail_turn_down_to_left_5.png"
+    },
+    {
+      "id": "tail_turn_down_to_left",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "down",
+      "to": "left",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_down_to_left.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_down_to_left.png"
+    },
+    {
+      "id": "head_idle_left_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_left",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_idle_left/head_idle_left_0.svg",
+      "png": "PNG/Animations/Frames/head_idle_left/head_idle_left_0.png"
+    },
+    {
+      "id": "head_idle_left_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_left",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_idle_left/head_idle_left_1.svg",
+      "png": "PNG/Animations/Frames/head_idle_left/head_idle_left_1.png"
+    },
+    {
+      "id": "head_idle_left_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_left",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_idle_left/head_idle_left_2.svg",
+      "png": "PNG/Animations/Frames/head_idle_left/head_idle_left_2.png"
+    },
+    {
+      "id": "head_idle_left_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_idle_left",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_idle_left/head_idle_left_3.svg",
+      "png": "PNG/Animations/Frames/head_idle_left/head_idle_left_3.png"
+    },
+    {
+      "id": "head_idle_left",
+      "width": 128,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "fps": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        600,
+        120,
+        100,
+        380
+      ],
+      "svg": "SVG/Animations/Sheets/head_idle_left.svg",
+      "png": "PNG/Animations/Sheets/head_idle_left.png"
+    },
+    {
+      "id": "head_turn_left_to_down_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_0.png"
+    },
+    {
+      "id": "head_turn_left_to_down_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_1.png"
+    },
+    {
+      "id": "head_turn_left_to_down_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_2.png"
+    },
+    {
+      "id": "head_turn_left_to_down_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_3.png"
+    },
+    {
+      "id": "head_turn_left_to_down_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_4.png"
+    },
+    {
+      "id": "head_turn_left_to_down_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_down",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_down/head_turn_left_to_down_5.png"
+    },
+    {
+      "id": "head_turn_left_to_down",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "left",
+      "to": "down",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_left_to_down.svg",
+      "png": "PNG/Animations/Sheets/head_turn_left_to_down.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_0.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_1.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_2.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_3.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_4.png"
+    },
+    {
+      "id": "tail_turn_left_to_down_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_down",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_down/tail_turn_left_to_down_5.png"
+    },
+    {
+      "id": "tail_turn_left_to_down",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "left",
+      "to": "down",
+      "turn": "counterclockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_left_to_down.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_left_to_down.png"
+    },
+    {
+      "id": "head_turn_left_to_up_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_0.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_0.png"
+    },
+    {
+      "id": "head_turn_left_to_up_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_1.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_1.png"
+    },
+    {
+      "id": "head_turn_left_to_up_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_2.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_2.png"
+    },
+    {
+      "id": "head_turn_left_to_up_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_3.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_3.png"
+    },
+    {
+      "id": "head_turn_left_to_up_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_4.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_4.png"
+    },
+    {
+      "id": "head_turn_left_to_up_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "head_turn_left_to_up",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_5.svg",
+      "png": "PNG/Animations/Frames/head_turn_left_to_up/head_turn_left_to_up_5.png"
+    },
+    {
+      "id": "head_turn_left_to_up",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "left",
+      "to": "up",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/head_turn_left_to_up.svg",
+      "png": "PNG/Animations/Sheets/head_turn_left_to_up.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_0",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 0,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_0.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_0.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_1",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 1,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_1.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_1.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_2",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 2,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_2.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_2.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_3",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 3,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_3.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_3.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_4",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 4,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_4.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_4.png"
+    },
+    {
+      "id": "tail_turn_left_to_up_5",
+      "width": 32,
+      "height": 32,
+      "sequence": "tail_turn_left_to_up",
+      "frame": 5,
+      "svg": "SVG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_5.svg",
+      "png": "PNG/Animations/Frames/tail_turn_left_to_up/tail_turn_left_to_up_5.png"
+    },
+    {
+      "id": "tail_turn_left_to_up",
+      "width": 192,
+      "height": 32,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "from": "left",
+      "to": "up",
+      "turn": "clockwise",
+      "fps": 24,
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        35,
+        45,
+        45,
+        40,
+        50
+      ],
+      "svg": "SVG/Animations/Sheets/tail_turn_left_to_up.svg",
+      "png": "PNG/Animations/Sheets/tail_turn_left_to_up.png"
+    },
+    {
+      "id": "fruit_apple",
+      "width": 32,
+      "height": 32,
+      "svg": "SVG/Fruit/fruit_apple.svg",
+      "png": "PNG/Fruit/fruit_apple.png"
+    },
+    {
+      "id": "grass_atlas_4x4",
+      "width": 64,
+      "height": 64,
+      "frameWidth": 16,
+      "frameHeight": 16,
+      "frameCount": 16,
+      "svg": "SVG/Atlases/grass_atlas_4x4.svg",
+      "png": "PNG/Atlases/grass_atlas_4x4.png"
+    }
+  ]
+}

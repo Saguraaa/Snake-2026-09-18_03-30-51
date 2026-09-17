@@ -1,0 +1,22 @@
+{
+  "name": "SnakeGame.Weather.Authoring",
+  "rootNamespace": "SnakeGame.Weather.Authoring",
+  "references": [
+    "SnakeGame.Core",
+    "SnakeGame.Features",
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Entities.Hybrid",
+    "Unity.Mathematics",
+    "Unity.Transforms"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

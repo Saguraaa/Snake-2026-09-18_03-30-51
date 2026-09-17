@@ -1,0 +1,18 @@
+{
+  "name": "SnakeGame.Core",
+  "rootNamespace": "SnakeGame.Core",
+  "references": [
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Mathematics"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
