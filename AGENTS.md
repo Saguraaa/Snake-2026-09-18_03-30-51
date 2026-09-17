@@ -264,7 +264,7 @@ View 可以使用 MonoBehaviour，也可以使用运行在表现阶段的 ECS Sy
 - Entity Prefab、SubScene 和普通 GameObject Prefab 的职责要清楚，不隐式依赖场景中的对象名称查找。
 - 移动 Unity 资源时必须连同 `.meta` 保留 GUID。优先使用 Unity AssetDatabase/MCP 资源接口，并检查场景、Prefab、动画和项目设置引用。
 - 删除资产前先解析准确目标、搜索引用并说明恢复方式。不得删除 `Packages`、`ProjectSettings` 或 Unity 工程缓存来规避编译问题。
-- 美术生成工具位于 `Tools/SnakePixelArt`，预览位于 `ArtPreviews/SnakePixelArt`。生成结果只能写入当前约定的 `Assets/Art/2D/SnakePixelArt`。
+- 项目只提交位于 `Assets/Art/2D/SnakePixelArt` 的可编辑 SVG、Unity 使用的 PNG、动画片段、清单和说明。根目录 `ArtPreviews` 与 `Tools/SnakePixelArt` 属于本地生成或验收工作区，必须保持忽略，不得被游戏代码或资源引用。
 
 ## 9. 命名与代码组织
 

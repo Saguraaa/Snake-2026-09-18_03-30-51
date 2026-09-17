@@ -36,8 +36,6 @@ PNG 使用 Sprite、Point 过滤、无压缩、关闭 mipmap、Clamp。独立帧
 
 俯视 2D 可直接使用 SpriteRenderer / Tilemap。3D 场景可将同一组 PNG 作为平面或公告板的像素贴图；这些 SVG/PNG 本身不是立体模型。
 
-## 预览与编辑
+## 编辑与维护
 
-项目根目录的 `ArtPreviews/SnakePixelArt/index.html` 可以直接打开，查看地图拼接、所有草地图块以及逐帧动画，可暂停、选择帧和调整速度。`contact-sheet.png` 为总览。
-
-绘图源文件位于 `Tools/SnakePixelArt/build-assets.cjs`。需要 Node.js 和 sharp；重新生成会更新本目录中的 SVG/PNG，保留已有 PNG 的 Unity GUID。现有 Pixel Adventure 1 文件不需要修改。
+`SVG` 目录是随项目提交的可编辑源文件，`PNG` 目录是 Unity 默认使用的像素资源。修改资产时必须同步更新对应 SVG 与 PNG，并保留现有 `.meta` 文件和 GUID；PNG 继续使用 Point 过滤、无压缩、关闭 mipmap 和 Clamp。临时生成脚本、联系表和浏览器预览不属于项目交付物，不得被游戏资源或运行时代码引用。现有 Pixel Adventure 1 文件不需要修改。

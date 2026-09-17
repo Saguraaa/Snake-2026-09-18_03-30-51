@@ -41,6 +41,8 @@
 /[Aa]ssets/Plugins/Editor/JetBrains*
 # Jetbrains Rider personal-layer settings
 *.DotSettings.user
+# JetBrains IDE project settings
+/.idea/
 
 # Visual Studio cache directory
 .vs/
@@ -112,3 +114,7 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Local pixel-art generation and visual QA workspaces
+/ArtPreviews/
+/Tools/SnakePixelArt/

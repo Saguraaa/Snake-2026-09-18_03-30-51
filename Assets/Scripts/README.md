@@ -60,6 +60,6 @@ Authoring 在各功能模块内部，但各有独立 asmdef，不编入父级 Fe
 
 ## 工程支持内容
 
-根目录 `Tools/SnakePixelArt` 和 `ArtPreviews/SnakePixelArt` 用于现有美术资产的编辑、校验和预览，继续保留；生成工具已使用新的输出路径。`Packages`、`ProjectSettings` 是工程配置；`Library`、`Temp`、`Logs`、`UserSettings` 是编辑器缓存或状态，由 Unity 自动维护。
+可交付的蛇与草地美术资源集中在 `Assets/Art/2D/SnakePixelArt`。根目录 `Tools/SnakePixelArt`、`ArtPreviews` 和 `.idea` 属于本地工具、验收预览或 IDE 状态，均由 `.gitignore` 排除，不作为项目依赖。`Packages`、`ProjectSettings` 是工程配置；`Library`、`Temp`、`Logs`、`UserSettings` 是编辑器缓存或状态，由 Unity 自动维护。
 
 清理范围为火箭演示资产与截图、Pixel Adventure 1 演示场景、默认 URP 场景模板。已有输入动作和 URP 配置保留并归入相应目录，保持项目设置引用有效。
